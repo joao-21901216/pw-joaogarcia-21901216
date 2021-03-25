@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Amestardão</title>
+            <meta name="author" content="João Garcia">
+            <meta name="keywords" content="Amestardão">
+            <meta name="description" content="Website sobre Amestardão">
+            <body style="background-color: #fcf8e8"></body>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+            <link href="estilos.css" rel="stylesheet">
+
+    </head>
+    
+    <head>
+    </head>
+    <body>
+        <h1>Amestardão</h1>
+        <img src="img/amesterdao-dois.jpg" alt="Amestardão">
+        <br>
+        <a href="index.html">
+            <span class="material-icons">list</span>
+            Introdução</a> |
+        <a href="local.html">
+            <span class="material-icons">room</span>
+            Localização</a> |
+        <a href="multimedia.html">
+            <span class="material-icons">filter</span>
+            Multimédia</a> |
+        <a href="info.html">
+            <span class="material-icons">perm_device_information</span>
+            Informações</a> |
+        <a href="quizz.html">
+            <span class="material-icons">quiz</span>
+            Quizz</a> |
+        <a href="comentarios.html">
+            <span class="material-icons">forum</span>
+            Comentários</a> |
+        <a href="html5-css.html" class="menu-selected">
+            <span class="material-icons">drag_indicator</span>
+            CSS</a> |
+        <a href="..\index.html">
+            <span class="material-icons">home</span>
+            Home</a>
+        <br>
+        <h3>Quizz</h3>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Quizz</legend>
+        <form>
+            <fieldset>
+            <legend>Identificação:</legend>
+            <p>Nome: <input type="text" name="nome"></p>
+            <p>Idade: <input type="text" name="idade"></p>
+            <p>Data de nascimento: <input type="date"name="dataNascimento"></p>
+            
+            </fieldset>
+        </form>
+        <br>
+        <br>
+
+        <form >
+            <fieldset>
+            <Legend>Quanto gosta de Amestardão</Legend>
+            <input type="range" min="0" max="100"name="taxa" value="0"oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> %
+            <br>
+            
+            </fieldset>
+        </form>
+        <br>
+        <br>
+
+        <form>
+            <fieldset>
+            <legend>Paises que fazem fronteira com a Holanda</legend>
+            <input type="checkbox" id="pais1" name="pais" value="Alemanha">
+            <label for="Alemanha"> Alemanha</label>
+            <br>
+            <input type="checkbox" id="pais2" name="pais" value="Belgica">
+            <label for="Belgica"> Belgica</label>
+            <br>
+            <input type="checkbox" id="vehicle3" name="pais" value="Portugal">
+            <label for="Portugal"> Portugal</label>
+            <br>
+            
+            </fieldset>
+        </form> 
+        <br>
+        <br>
+
+        <form>
+            <fieldset>
+            <Legend>Onde fica Amestardão</Legend>
+            <input type="radio" id="França" name="onde" value="França">
+            <label for="frança">França</label>
+            <br>
+            <input type="radio" id="Alemanha" name="onde" value="Alemanha">
+            <label for="alemanha">Alemanha</label>
+            <br>
+            <input type="radio" id="Holanda" name="onde" value="Holanda">
+            <label for="holanda">Holanda</label>
+            <br>
+            
+            </fieldset>
+        </form> 
+          
+        <br>  
+        <br>
+
+
+        <form >
+            <fieldset>
+            <legend>Cores Da Bandeira da Holanda:</legend>
+            <br>
+            <input type="color" id="cor" name="color" value="#ffFFFf"> 
+            <br>
+            <input type="color" id="cor" name="color" value="#ffFFFf" >
+            <br>
+            <input type="color" id="cor" name="color" value="#ffFFFf">
+            <br>
+            
+            </fieldset>
+        </form>
+        <br>
+        <br>
+
+        <form>
+            <fieldset>
+            <legend> Quantidade de habitantes na cidade de Amestardão (entre 500 000 e 1 500 000):</legend>
+            <br>
+            <input type="number" id="quantity" name="quantity" min="500 000" max="1 500 000"><br>
+            
+            </fieldset>
+            <input type="image" src="img/25497-9-submit-button-photos.png" alt="Submit" width="50" height="25">
+        </form>
+    </fieldset>
+          
+            
+
+    
+</body>
+</html>
