@@ -7,7 +7,7 @@
             <meta name="author" content="João Garcia">
             <meta name="keywords" content="Amestardão">
             <meta name="description" content="Website sobre Amestardão">
-            <body style="background-color: #fcf8e8"></body>
+            
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
             <link href="estilos.css" rel="stylesheet">
@@ -40,7 +40,7 @@
             Comentários</a> |
         <a href="html5-css.html" class="menu-selected">
             <span class="material-icons">drag_indicator</span>
-            CSS</a> |
+            HTML-5 CSS</a> |
         <a href="..\index.html">
             <span class="material-icons">home</span>
             Home</a>
@@ -198,7 +198,7 @@
                         <tr>
                             <th>colgroup</th>
                             <td><i class="material-icons">close</i></td>
-                            <td>Nenhuma página contem este conceito.</a></td>
+                            <td>Nenhuma página contêm este conceito.</a></td>
                         </tr>
                         <tr>
                             <th>main</th>
@@ -218,22 +218,22 @@
                         <tr>
                             <th>header</th>
                             <td><i class="material-icons">check</i></td>
-                            <td>Todas as páginas fazem uso do elemento header.</td>
+                            <td>Todas as páginas contêm o elemento header.</td>
                         </tr>
                         <tr>
                             <th>footer</th>
                             <td><i class="material-icons">check</i></td>
-                            <td>Todas as páginas fazem uso do elemento footer.</td>
+                            <td>Todas as páginas contêm o elemento footer.</td>
                         </tr>
                         <tr>
                             <th>aside</th>
                             <td><i class="material-icons">close</i></td>
-                            <td>Este elemento não é usado em nenhuma página.</td>
+                            <td>Nenhuma página contêm este elemento</td>
                         </tr>
                         <tr>
                             <th>article</th>
                             <td><i class="material-icons">close</i></td>
-                            <td>Este elemento não é usado em nenhuma página.</td>
+                            <td>Nenhuma página contêm este elemento</td>
                         </tr>
                     </tbody>
                 </table>
@@ -241,138 +241,7 @@
 
             <hr>
 
-            <section>
-                <h4>CSS</h4>
-
-                <table cellspacing="2px" cellpadding="10%">
-                    <thead>
-                        <tr><th>Tipo de Seletor</th> <th>Usado?</th> <th>Comentário e Uso</th></tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th>universal</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização de todos os elementos HTML a que a stylesheet é aplicada.<br>
-                                Foi usado para alterar a font base de todas as páginas para um custom.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>tipo</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML do tipo especificado.<br>
-                                Foi usado para estilizar vários elementos de formas diferentes.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>classe</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML da classe especificada.<br>
-                                Foi usado para definir fonts e criar as classes usadas para colocar imagens sobrepostas.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>id</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML com o id especificado.<br>
-                                Foi usado para alterar a fonte de um dos elementos do menu animado.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>atributo</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML do tipo especificado que façam uso do atributo especificado.<br>
-                                Foi usado para estilizar links, borders e texto.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>pseudo-classe</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML que estejam num estado especificado.<br>
-                                Foi usado para alterar a estilização dos vários estados dos links e algum texto.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>pseudo-elemento</th>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas de elementos HTML na parte do mesma especificada.<br>
-                                Foi usado para colocar icons antes e depois dos links no menu de navegação.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <br>
-
-                <table cellspacing="2px" cellpadding="10%">
-                    <thead>
-                        <tr><th>Combinadores de Seletores</th> <th>Usado</th> <th>Comentário e Uso</th></tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>
-                                Descendentes<br>
-                                (Ex: div p)
-                            </td>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização de todos os elementos p dentro de um elemento div, por exemplo.<br>
-                                Foi usado para estilizar várias elementos de formas diferentes.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Filhos<br>
-                                (Ex: div > p)
-                            </td>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização de todos os elementos p que estejam diretamente dentro de div, por exemplo, no entanto se estiverem dentro de outro elemento dentro de div não são afetados.<br>
-                                Foi usado para estilizar links em figcaptions, fieldsets em forms e h4 dentro de sections.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Adjacentes<br>
-                                (Ex: div ~ p)
-                            </td>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estiliziação de todos os elementos p colocados após um elemento div, por exemplo.
-                                Foi usado para estilizar figcaptions após imgs.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Imediatamente Adjacentes<br>
-                                (Ex: div + p)
-                            </td>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                Altera a estilização apenas do primeiro elemento p que se encontre imediatamente após um elemento div, mas não se houver qualquer elementos entre eles.<br>
-                                Foi usado para estilizar elementos details após elementos a e elementos p após elementos sup.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Agrupar<br>
-                                (Ex: div, p)
-                            </td>
-                            <td><i class="material-icons">check</i></td>
-                            <td>
-                                
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+            
             </main>
         </body>
     </html>
