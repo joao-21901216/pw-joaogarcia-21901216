@@ -11,7 +11,36 @@ tr:nth-child(even) {background: #CCC}
 tr:nth-child(odd) {background: #FFF}
 
 body{
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(201, 224, 224);
+    display: grid;
+    grid-template-columns:  300px auto;
+    grid-gap: 25px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+main, aside {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 10px 13px -7px rgb(0, 6, 85);
+    box-shadow: 0px 10px 13px -7px rgb(0, 6, 85);
+}
+
+header {
+    width: auto;
+    height: 500px;
+    background-position-y: -420px;
+    background-image: url("img/anoitecer-em-amsterdam.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    padding: 25px;
+    color: white;
+    
 }
 
 a:link {
@@ -20,7 +49,7 @@ a:link {
   
   
 a:visited {
-    color: green;
+    color: rgb(128, 119, 0);
 }
   
   
@@ -31,4 +60,56 @@ a:hover {
   
 a:active {
     color: blue;
+}
+
+
+
+header, nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+aside {
+    text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+main {
+	grid-column-start: 2;
+	grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+footer {
+    grid-column-start: 1;
+	grid-column-end: 3;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.visit-buttom {
+    width: max-content;
+    text-align: center;
+    background-color: rgb(201, 224, 224);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 17px;
 }
